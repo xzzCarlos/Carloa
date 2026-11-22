@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0f">
+  <meta name="description" content="Potato Client: personaliza tu experiencia de Minecraft con HUDs, cosméticos y funciones visuales.">
+  <title>Potato Client — Tu Minecraft, a tu manera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-loader" id="pageLoader" aria-hidden="true"><div class="loader-logo">P<span>.</span></div><div class="loader-track"><i></i></div><small>PREPARANDO POTATO CLIENT</small></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="top-progress" id="progress"></div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Potato Client inicio">
+      <span class="brand-mark">P<span>.</span></span><span>POTATO<span class="brand-light">CLIENT</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i></button>
+    <nav class="nav" id="nav">
+      <a href="#features">Funciones</a><a href="#showcase">Vista previa</a><a href="#versions">Versiones</a><a href="#install">Instalación</a><a href="#faq">FAQ</a>
+      <button class="button button-small" data-open-download>Descargar <span>↗</span></button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy reveal">
+        <div class="status-pill"><span class="status-dot"></span> CLIENTE PARA MINECRAFT JAVA <span class="pill-divider"></span> FABRIC</div>
+        <h1>Tu Minecraft.<br><span class="gradient-text">A tu manera.</span></h1>
+        <p class="hero-description">Una experiencia más personal, limpia y cómoda. Reúne tus HUDs, cosméticos, música y ajustes visuales en Potato Client.</p>
+        <div class="hero-actions">
+          <button class="button" data-open-download>Descargar Potato Client <span>↓</span></button>
+          <a class="button button-ghost" href="#features">Explorar funciones <span>↘</span></a>
+        </div>
+        <div class="hero-meta"><span><b class="live-dot"></b> Proyecto gratuito</span><span>Fabric 1.20.1 / 1.21.4</span></div>
+      </div>
+      <div class="client-preview reveal">
+        <div class="preview-glow"></div>
+        <div class="preview-window">
+          <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>potato.client / dashboard</span><span class="window-status">● ONLINE</span></div>
+          <div class="preview-layout">
+            <aside class="preview-sidebar">
+              <div class="mini-brand"><span class="brand-mark mini-mark">P</span><b>POTATO</b></div>
+              <div class="side-item selected"><span>◈</span> Inicio</div><div class="side-item"><span>▦</span> HUD Editor</div><div class="side-item"><span>◇</span> Cosméticos</div><div class="side-item"><span>♫</span> Música</div><div class="side-item"><span>⚙</span> Ajustes</div>
+              <div class="sidebar-bottom">POTATO CLIENT <small>VERSION 1.18.6</small></div>
+            </aside>
+            <div class="preview-content">
+              <div class="preview-heading"><div><small>WELCOME BACK</small><h3>Panel principal</h3></div><div class="avatar">P</div></div>
+              <div class="welcome-card"><div><span class="tiny-label">TU EXPERIENCIA</span><h4>Todo listo para jugar.</h4><p>Configura tu cliente y entra al mundo.</p><button class="fake-button">Abrir ajustes <b>↗</b></button></div><div class="orb-art"><span>P</span></div></div>
+              <div class="preview-stats"><div><small>FPS HUD</small><b>144 <em>FPS</em></b><span class="stat-line"></span></div><div><small>PERFIL</small><b>Default</b><span class="stat-caption">Configuración activa</span></div><div><small>ESTADO</small><b class="green">Listo</b><span class="stat-caption">Fabric detectado</span></div></div>
+              <div class="preview-bottom"><span>◉ Módulos destacados</span><span>Ver todos ↗</span></div>
+              <div class="module-row"><span class="module-icon">⌗</span><div><b>HUD personalizado</b><small>Información en pantalla</small></div><span class="enabled">ACTIVO</span></div>
+              <div class="module-row"><span class="module-icon music-icon">♫</span><div><b>Music Overlay</b><small>Reproductor integrado</small></div><span class="enabled">ACTIVO</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-chip chip-top"><span class="chip-pulse"></span> Interfaz personalizable</div>
+        <div class="floating-chip chip-bottom">✦ <b>Potato Client</b> <span>1.18.6</span></div>
+      </div>
+      <div class="hero-scroll">SCROLL PARA EXPLORAR <span>↓</span></div>
+    </section>
+
+    <div class="ticker"><div class="ticker-track"><span>PERSONALIZA</span><i>✳</i><span>OPTIMIZA</span><i>✳</i><span>JUEGA</span><i>✳</i><span>PERSONALIZA</span><i>✳</i><span>OPTIMIZA</span><i>✳</i><span>JUEGA</span><i>✳</i></div></div>
+
+    <section class="section section-wrap" id="features">
+      <div class="section-heading reveal"><span class="eyebrow">01 / FUNCIONES</span><h2>Todo lo que necesitas.<br><span class="muted-gradient">En un solo lugar.</span></h2><p>Herramientas pensadas para que adaptes el juego a tu estilo, sin llenar tu pantalla de cosas innecesarias.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-large reveal"><div class="feature-visual hud-visual"><div class="hud-box"><b>Potato HUD</b><span>FPS <strong>144</strong></span><span>XYZ <strong>128 / 64 / -302</strong></span><span>W A S D <strong>●</strong></span></div><div class="crosshair">+</div></div><div class="feature-info"><span class="feature-number">01 — INFORMACIÓN</span><h3>HUDs personalizables</h3><p>Consulta FPS, coordenadas, teclas y otros datos útiles directamente en pantalla.</p></div></article>
+        <article class="feature-card reveal"><div class="feature-visual music-visual"><div class="album-art">P<span>♫</span></div><div class="music-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>NOW PLAYING</small></div><div class="feature-info"><span class="feature-number">02 — AUDIO</span><h3>Música y letras</h3><p>Un espacio para tu música mientras juegas.</p></div></article>
+        <article class="feature-card reveal"><div class="feature-visual cosmetic-visual"><div class="cape-shape"></div><span class="sparkle s1">✦</span><span class="sparkle s2">✧</span><span class="sparkle s3">✦</span></div><div class="feature-info"><span class="feature-number">03 — ESTILO</span><h3>Capas y cosméticos</h3><p>Personaliza la apariencia de tu personaje con detalles propios.</p></div></article>
+        <article class="feature-card reveal"><div class="feature-visual visual-visual"><div class="visual-orb"></div><div class="visual-grid"></div><span class="visual-label">VISUAL MODE / ON</span></div><div class="feature-info"><span class="feature-number">04 — EXPERIENCIA</span><h3>Mejoras visuales</h3><p>Detalles visuales para darle una identidad diferente a tu juego.</p></div></article>
+        <article class="feature-card reveal"><div class="feature-visual update-visual"><div class="update-card"><span class="update-icon">↻</span><div><b>Nueva actualización</b><small>Potato Client está al día</small></div><span class="update-arrow">↗</span></div><div class="update-lines"><i></i><i></i><i></i></div></div><div class="feature-info"><span class="feature-number">05 — ACTUALIZACIONES</span><h3>Avisos de versión</h3><p>Entérate cuando haya novedades y nuevas versiones disponibles.</p></div></article>
+      </div>
+    </section>
+
+    <section class="showcase-section" id="showcase"><div class="section-wrap showcase-inner">
+      <div class="showcase-copy reveal"><span class="eyebrow">02 / EXPERIENCIA</span><h2>Una interfaz<br><span class="gradient-text">hecha para ti.</span></h2><p>Una presentación moderna y ordenada para que encuentres tus herramientas rápidamente. La vista previa es conceptual y representa la dirección visual del proyecto.</p><a class="text-link" href="#versions">Ver versiones disponibles <span>↗</span></a></div>
+      <div class="showcase-orbit reveal"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="showcase-core"><span class="core-mark">P</span><b>POTATO</b><small>CLIENT EXPERIENCE</small></div><span class="orbit-tag tag-a">HUD EDITOR</span><span class="orbit-tag tag-b">COSMETICS</span><span class="orbit-tag tag-c">VISUALS</span></div>
+    </div></section>
+
+    <section class="section section-wrap" id="versions">
+      <div class="section-heading reveal"><span class="eyebrow">03 / DESCARGAS</span><h2>Elige tu versión.</h2><p>Selecciona la versión de Minecraft compatible con tu instalación de Fabric.</p></div>
+      <div class="version-grid">
+        <article class="version-card reveal"><div class="version-top"><span class="version-label">MINECRAFT JAVA</span><span class="version-badge">DISPONIBLE</span></div><h3>1.21.4</h3><p>Potato Client v1.18.6</p><div class="version-divider"></div><div class="version-detail"><span>Loader</span><b>Fabric</b></div><div class="version-detail"><span>Precio</span><b>Gratis</b></div><button class="button version-button" data-open-download>Seleccionar versión <span>→</span></button></article>
+        <article class="version-card reveal"><div class="version-top"><span class="version-label">MINECRAFT JAVA</span><span class="version-badge">DISPONIBLE</span></div><h3>1.20.1</h3><p>Potato Client v1.18.6</p><div class="version-divider"></div><div class="version-detail"><span>Loader</span><b>Fabric</b></div><div class="version-detail"><span>Precio</span><b>Gratis</b></div><button class="button button-ghost version-button" data-open-download>Seleccionar versión <span>→</span></button></article>
+        <article class="version-card version-soon reveal"><div class="version-top"><span class="version-label">ROADMAP</span><span class="version-badge badge-soon">EN CAMINO</span></div><div class="soon-symbol">＋</div><h3>Más versiones</h3><p>Compatibilidad adicional próximamente.</p><div class="version-divider"></div><div class="version-detail"><span>Estado</span><b>En desarrollo</b></div><div class="version-detail"><span>Precio</span><b>Gratis</b></div><button class="button button-disabled" disabled>Próximamente</button></article>
+      </div>
+      <p class="download-note">Necesitas Fabric Loader y Fabric API correspondientes a la versión de Minecraft que utilices.</p>
+    </section>
+
+    <section class="install-section" id="install"><div class="section-wrap">
+      <div class="section-heading reveal"><span class="eyebrow">04 / INSTALACIÓN</span><h2>Empieza en cuatro pasos.</h2><p>Instala el mod manualmente en tu perfil de Fabric.</p></div>
+      <div class="steps">
+        <article class="step reveal"><span>01</span><h3>Instala Fabric</h3><p>Descarga Fabric Loader y selecciona Minecraft 1.20.1 o 1.21.4.</p></article>
+        <article class="step reveal"><span>02</span><h3>Descarga el archivo</h3><p>Obtén el archivo .jar de Potato Client desde el enlace oficial del proyecto.</p></article>
+        <article class="step reveal"><span>03</span><h3>Mueve el archivo</h3><p>Coloca Potato Client y Fabric API dentro de la carpeta <code>.minecraft/mods</code>.</p></article>
+        <article class="step reveal"><span>04</span><h3>Abre Minecraft</h3><p>Inicia el perfil de Fabric correspondiente y disfruta tu configuración.</p></article>
+      </div>
+      <div class="folder-copy reveal"><code>.minecraft/mods</code><button id="copyFolder">Copiar ruta <span>▢</span></button></div>
+    </div></section>
+
+    <section class="section section-wrap requirements"><div class="requirements-panel reveal"><div><span class="eyebrow">REQUISITOS</span><h2>Antes de instalar.</h2><p>Comprueba que todos los componentes coincidan con tu versión del juego.</p></div><div class="requirement-list"><div><span>Minecraft</span><b>Java 1.20.1 / 1.21.4</b></div><div><span>Mod loader</span><b>Fabric Loader</b></div><div><span>Dependencia</span><b>Fabric API</b></div><div><span>Precio</span><b class="green">Gratis</b></div></div></div></section>
+
+    <section class="section section-wrap faq-section" id="faq"><div class="section-heading reveal"><span class="eyebrow">05 / SOPORTE</span><h2>Preguntas frecuentes.</h2><p>Respuestas rápidas sobre Potato Client.</p></div>
+      <div class="faq-list reveal">
+        <details><summary>¿Potato Client es gratis?</summary><p>Sí. El proyecto se presenta como gratuito.</p></details>
+        <details><summary>¿Qué versiones son compatibles?</summary><p>La información actual del proyecto indica Minecraft Java 1.20.1 y 1.21.4 con Fabric.</p></details>
+        <details><summary>¿Necesito Fabric API?</summary><p>Sí. Instala Fabric Loader y Fabric API de la misma versión que tu Minecraft.</p></details>
+        <details><summary>¿Puedo usar otros mods?</summary><p>La compatibilidad puede variar según los mods instalados. Consulta los canales de soporte del proyecto si encuentras algún conflicto.</p></details>
+        <details><summary>¿Dónde consigo ayuda?</summary><p>Únete a la comunidad de Potato Client cuando el enlace oficial de Discord esté configurado.</p></details>
+      </div>
+    </section>
+
+    <section class="final-cta section-wrap reveal"><div class="cta-glow"></div><span class="eyebrow">POTATO CLIENT</span><h2>Tu juego.<br><span class="gradient-text">Tus reglas.</span></h2><p>Personaliza tu experiencia y prepárate para entrar al mundo.</p><button class="button" data-open-download>Descargar ahora <span>↓</span></button></section>
+  </main>
+
+  <footer class="footer"><div class="footer-main"><a class="brand" href="#home"><span class="brand-mark">P<span>.</span></span><span>POTATO<span class="brand-light">CLIENT</span></span></a><p>Una experiencia de Minecraft creada para personalizarse.</p><div class="footer-links"><a href="#features">Funciones</a><a href="#versions">Descargas</a><a href="#install">Instalación</a><a href="#faq">Soporte</a></div></div><div class="footer-bottom"><span>© 2026 Potato Client. Proyecto independiente.</span><span>Minecraft es una marca de Mojang Studios. Potato Client no está afiliado a Mojang ni Microsoft.</span></div></footer>
+
+  <button class="back-top" id="backTop" aria-label="Volver arriba">↑</button>
+  <div class="modal" id="downloadModal" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" data-close-modal aria-label="Cerrar">×</button><span class="eyebrow">DESCARGA</span><h2 id="modalTitle">Selecciona tu versión.</h2><p>Los enlaces de descarga todavía deben configurarse.</p><div class="modal-version"><div><b>Minecraft 1.21.4</b><small>Potato Client v1.18.6 · Fabric</small></div><span class="version-badge">LINK PENDIENTE</span></div><div class="modal-version"><div><b>Minecraft 1.20.1</b><small>Potato Client v1.18.6 · Fabric</small></div><span class="version-badge">LINK PENDIENTE</span></div><p class="modal-footnote">Añade tus enlaces .jar en el archivo <code>js/script.js</code> para activar las descargas.</p></div></div>
+  <div class="toast" id="toast">Ruta copiada</div>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
