@@ -1,2 +1,0 @@
-# Carloa
-Portafolio 
